@@ -19,7 +19,7 @@ let toUpper = (x) => { return x.toUpperCase() }
 file = narf(file)
 let upper = poit(toUpper)
 file = upper(file)
-console.log('Pinkey says:')
+console.log('Pinky says:')
 poit(console.log)(file)
 
 module.exports = poit
