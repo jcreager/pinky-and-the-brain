@@ -3,11 +3,9 @@ let fs = require('fs')
 
 let toString = (x) => { return x.toString() }
 
-// declairitive
-// narf is an event
-let narf = (f) => {
+let narf = (file) => {
   let p = new Promise((resolve, reject) => {
-    fs.readFile(f, 'utf8', (e, d) => {
+    fs.readFile(file, 'utf8', (e, d) => {
       let result = e ? reject(e) : resolve(d)
       return result
     })
